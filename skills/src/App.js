@@ -1,23 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import SkillsList from './SkillsList'
+import NewSkillForm from './NewSkillForm'
+
+const skills = [
+  "Javascript",
+  "Swift",
+  "HTML",
+  "CSS",
+  "Python"
+];
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>React Skills</h1>
+      <SkillsList skills={skills}/>
+      <NewSkillForm />
     </div>
   );
 }
