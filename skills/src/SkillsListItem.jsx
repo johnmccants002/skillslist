@@ -4,8 +4,8 @@ import './SkillsListItem.css'
 function SkillsListItem({skill}) {
 
     return (
-        <li>
-            {skill}
+        <li className="SkillListItem">
+            {skill.skillName} Level {skill.level}
         </li>
     );
 }
